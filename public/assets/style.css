@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* GLOBAL-START */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcf5ed;
+}
+
+/* GLOBAL-END */
+
+/* HEADER-START */
+
+header.navbar-container {
+  padding-block-start: 1rem;
+  display: flex;
+  font-family: "Nunito", sans-serif;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header.navbar-container .navbar-list ul {
+  padding-block: 1rem;
+  display: flex;
+  gap: 3rem;
+  flex-direction: row;
+}
+
+header.navbar-container .navbar-list ul li {
+  padding-block: 1rem;
+  list-style-type: none;
+}
+
+header.navbar-container .navbar-list ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  transition: 0.5s linear;
+}
+
+header.navbar-container .navbar-list ul li:hover a {
+  background-color: #f4bf96;
+  border-radius: 999px;
+}
+
+/* HEADER-END */
+
+/* MAIN-START */
+
+main {
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 2rem;
+}
+
+main .content .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+  z-index: 1;
+  padding-inline-start: 2%;
+  margin-top: 4rem;
+}
+
+main .content .about h1 {
+  margin-top: -2rem;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 10rem;
+  z-index: 2;
+}
+
+main .content .about h1,
+p {
+  text-align: justify;
+}
+
+main .content .about p {
+  font-family: "Nunito", sans-serif;
+  width: 70%;
+  z-index: 2;
+}
+
+main .content .profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  margin-top: -38%;
+  margin-bottom: 4rem;
+}
+
+main .content .profile img {
+  width: 35%;
+  height: 35%;
+}
+
+.experience,
+.projects,
+.education,
+.tools {
+  padding-inline: 2%;
+  margin-bottom: 4rem;
+}
+
+.experience,
+.projects,
+.education,
+.tools h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+}
+
+.card {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 45%;
+  margin-bottom: 1rem;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+  
+}
+
+#p1{
+  perspective: 1000px;
+  overflow: hidden;
+}
+
+#p1{
+  background-color: #83a2ff;
+}
+
+.p-cards .card:hover{
+  transform: rotateY(360deg);
+}
+
+.p-cards .card:hover .back{
+    opacity: 1;
+}
+
+.back {
+  width: 5rem;
+  border-radius: 10px;
+  border: 1px dotted black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-block-start: 1rem;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 1500ms ease-in-out;
+}
+
+.card p {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.experience {
+  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.experience .ex-cards {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.experience h1 {
+  text-align: right;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+
+#ex1 {
+  background-color: #7071e8;
+}
+
+#ex2 {
+  background-color: #c683d7;
+}
+
+#ex3 {
+  background-color: #ed9ed6;
+}
+
+#ex4 {
+  background-color: #ffc7c7;
+}
+
+#ex5 {
+  background-color: #ffe5e5;
+}
+
+#ex6 {
+  background-color: transparent;
+}
+
+.projects .p-cards {
+  margin-top: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects h1 {
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.project-image {
+  width: 50%;
+  max-height: 300px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+#p2 {
+  background-color: #b4bdff;
+}
+
+#p3 {
+  background-color: #ffe3bb;
+}
+
+#p4 {
+  background-color: #ffd28f;
+}
+
+#p5 {
+  background-color: #39a7ff;
+}
+
+#p6 {
+  overflow-y: hidden;
+  background-color: #87c4ff;
+}
+
+#p7 {
+  background-color: #e0f4ff;
+}
+#p8 {
+  background-color: #ffeed9;
+}
+
+.ed-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-block-start: 1rem;
+  justify-content: space-between;
+}
+.education {
+  display: flex;
+  flex-direction: column;
+}
+
+.education h1 {
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 2rem;
+}
+
+#ed1 {
+  background-color: #b2533e;
+}
+
+#ed2 {
+  background-color: #b5cb99;
+}
+.tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tools h1 {
+  justify-content: center;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tools .icon {
+  font-family: "Nunito", sans-serif;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.t1 {
+  text-align: center;
+}
+
+.t2 {
+  text-align: center;
+}
+
+.t3 {
+  text-align: center;
+}
+
+/* MAIN-END */
+
+/* ASIDE */
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+  z-index: 999;
+  opacity: 0;
+  transition: 0.5s opacity;
+}
+
+.social-media:hover {
+  opacity: 1;
+}
+
+main aside.social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside.social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background-color: #ce5a67;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main aside.social-media img{
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+main aside.social-media li {
+  list-style-type: none;
+}
+
+main aside.social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.1s ease-in-out;
+}
+
+main aside.social-media li a:hover {
+  color: #1f1717;
+}
+
+/* ASIDE-END */
+
+/* FOOTER */
+
+footer {
+  background-color: #1f1717;
+  padding: 4rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer h2 {
+  color: #f4bf96;
+  font-family: "Playfair Display", sans-serif;
+}
+
+footer h2 .title {
+  font-size: medium;
+  font-family: "Nunito", sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  color: #f4bf96;
+  font-family: "Nunito", sans-serif;
+}
+
+.contact-container ul {
+  margin-top: 10px;
+}
+
+.contact-container ul li a {
+  color: #f4bf96;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.contact-container ul li a:hover {
+  color: #ce5a67;
+  font-size: larger;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  color: #f4bf96;
+  font-family: "Nunito", sans-serif;
+}
+
+.portfolio-container ul {
+  margin-top: 10px;
+}
+
+.portfolio-container ul li a {
+  color: #f4bf96;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.portfolio-container ul li a:hover {
+  color: #ce5a67;
+  font-size: larger;
+}
+
+.call-to-action-container {
+  display: flex;
+  flex-direction: column;
+  color: #f4bf96;
+  font-family: "Nunito", sans-serif;
+}
+
+.call-to-action-container ul {
+  margin-top: 10px;
+}
+
+.call-to-action-container ul li a {
+  color: #f4bf96;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.call-to-action-container ul li a:hover {
+  color: #ce5a67;
+  font-size: larger;
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 900px) {
+  header.navbar-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  header.navbar-container .navbar-list ul {
+    flex-wrap: wrap;
+  }
+
+  header.navbar-container .navbar-list ul {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header.navbar-container .navbar-list li {
+    margin-top: -5rem;
+  }
+
+  main .about{
+    font-size: x-small;
+  }
+
+  main .content .about h1{
+    margin-top: 10px;
+    font-size: 4rem;
+  }
+
+  main .experience .ex-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  main .projects .p-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .card{
+    width: 100%;
+  }
+
+  main{
+    margin-top: -10rem;
+  }
+
+  main .education .ed-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  footer h2{
+    text-align: center;
+  }
+  
+}
