@@ -9,6 +9,7 @@ import ProjectCarousel from './components/ProjectCarousel';
 import CategorySelector from './components/CategorySelector';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import GreetingDonut from './components/GreetingDonut';
+import LoadingScreen from './components/LoadingScreen';
 
 // ─── Helper: assign a tag color class based on keyword ──────────────
 const getTagClass = (tag) => {
@@ -246,6 +247,7 @@ const AppContent = () => {
   const [viewMode, setViewMode] = useState('carousel'); // 'carousel' | 'grid'
   const [activeCategory, setActiveCategory] = useState('personal');
   const [carouselKey, setCarouselKey] = useState(0); // reset carousel on category change
+  const [loading, setLoading] = useState(true);
 
   const currentProjects = activeCategory === 'personal' ? personalProjects : workProjects;
 
@@ -253,6 +255,14 @@ const AppContent = () => {
     setActiveCategory(category);
     setCarouselKey((k) => k + 1); // force carousel reset to first slide
   };
+
+  const handleLoadingComplete = () => {
+    setLoading(false);
+  };
+
+  if (loading) {
+    return <LoadingScreen onComplete={handleLoadingComplete} />;
+  }
 
   return (
     <>
@@ -281,8 +291,8 @@ const AppContent = () => {
                   <p className="hero-role">
                     <TypewriterText
                       strings={[
-                        'Salesforce Developer',
-                        'Chatbot Developer',
+                        'Salesforce Developer (Apex - LWC - Flows)',
+                        'Chatbot Developer (Dify - 3Dolphins SRM)',
                         'UI/UX Designer',
                         'Web Developer'
                       ]}

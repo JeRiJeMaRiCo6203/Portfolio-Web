@@ -2,8 +2,8 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ─── Config ─────────────────────────────────────────────────────────
-const CAROUSEL_INTERVAL_MS = 1500;    // auto-advance every 1.5s
-const CAROUSEL_TRANSITION_S = 0.5;     // 500ms transition
+const CAROUSEL_INTERVAL_MS = 6000;    // auto-advance every 6s
+const CAROUSEL_TRANSITION_S = 1;     // 1s transition
 const SWIPE_THRESHOLD = 50;            // px drag to trigger swipe
 
 // ─── Check prefers-reduced-motion ───────────────────────────────────
