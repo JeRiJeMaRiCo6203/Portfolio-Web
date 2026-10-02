@@ -428,6 +428,10 @@ const AppContent = () => {
                   <span>🏅  HSK IV</span>
                   <img src="/assets/hsk.png" alt="" className="logo-badge" />
                 </li>
+                <li>
+                  <span>🏅  HSK III</span>
+                  <img src="/assets/hsk.png" alt="" className="logo-badge" />
+                </li>
               </ul>
             </div>
           </ScrollReveal>
