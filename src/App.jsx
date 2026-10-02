@@ -417,11 +417,11 @@ const AppContent = () => {
                   <img src="/assets/microsoft.jpg" alt="" className="logo-badge" />
                 </li>
                 <li>
-                  <span>🏅  Salesforce Certified AI Associate</span>
+                  <span>🏅  Salesforce Certified Agentforce Specialist</span>
                   <img src="/assets/sf.png" alt="" className="logo-badge" />
                 </li>
                 <li>
-                  <span>🏅  Salesforce Certified Agentforce Specialist</span>
+                  <span>🏅  Salesforce Certified AI Associate</span>
                   <img src="/assets/sf.png" alt="" className="logo-badge" />
                 </li>
                 <li>
