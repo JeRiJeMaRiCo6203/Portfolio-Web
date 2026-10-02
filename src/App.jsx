@@ -47,7 +47,7 @@ const personalProjects = [
     id: 3,
     name: 'Food List App (SwiftUI)',
     tags: ['Swift', 'SwiftUI', 'Xcode'],
-    description: 'A simple iOS app built with SwiftUI to display a list of food items. (Individual Project)',
+    description: 'A simple iOS app built with SwiftUI to display a list of food items. (Individual Project for Course)',
     link: 'https://github.com/JeRiJeMaRiCo6203/SwiftUI-Food-List-App',
     image: '/assets/food.png',
   },
@@ -91,12 +91,42 @@ const personalProjects = [
     link: 'https://github.com/JeRiJeMaRiCo6203/Legho',
     image: '/assets/legho.png',
   },
-  
-  
+  {
+    id: 9,
+    name: 'Tic-Tac-Toe Nusantara',
+    tags: ['C', 'DevC++'],
+    description: 'Desktop application built with C and DevC++ featuring a classic game of Tic-Tac-Toe. (Group Project for Bootcamp)',
+    link: 'https://github.com/JeRiJeMaRiCo6203/TICTACTOE-Nusantara',
+    image: '/assets/tictatoe1.png',
+  },
+  {
+    id: 10,
+    name: 'Portfolio Website',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    description: 'A personal portfolio website showcasing my experience, education, skills, and projects. (Individual Project for Course)',
+    link: 'https://github.com/JeRiJeMaRiCo6203/Dicoding-Dasar-Web-Programming',
+    image: '/assets/porto.png',
+  },
+  {
+    id: 11,
+    name: 'Hotel Gransylvania',
+    tags: ['C', 'DevC++'],
+    description: 'Desktop application built with C and DevC++ featuring a hotel booking management system. (Individual Project for University)',
+    link: 'https://github.com/JeRiJeMaRiCo6203/Hotel-Gransylvania',
+    image: '/assets/gransylvania.png',
+  },
+  {
+    id: 12,
+    name: 'Movie Info',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    description: 'A web application for displaying movie information and ratings utilizing the OMDB API. (Individual Project)',
+    link: 'https://github.com/JeRiJeMaRiCo6203/MovieInfo',
+    image: '/assets/movie.png',
+  },
   // {
-  //   id: 7,
+  //   id: 13,
   //   name: 'Trinity',
-  //   tags: ['Web', 'HTML', 'CSS', 'JavaScript'],
+  //   tags: ['HTML', 'TailwindCSS', 'JavaScript', 'Three.js'],
   //   description: '',
   //   link: '#',
   //   image: '/assets/trinity.png',
@@ -106,7 +136,7 @@ const personalProjects = [
 
 const workProjects = [
   {
-    id: 9,
+    id: 1,
     name: 'Cody',
     tags: ['AI', 'WhatsApp', 'Chatbot'],
     description: 'WhatsApp Generative AI Chatbot for automated customer support and engagement.',
