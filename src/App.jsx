@@ -137,8 +137,8 @@ const personalProjects = [
 const workProjects = [
   {
     id: 1,
-    name: 'Cody',
-    tags: ['AI', 'WhatsApp', 'Chatbot'],
+    name: 'Binus Cody Chatbot',
+    tags: ['3Dolphins SRM', 'MVEL', 'WhatsApp'],
     description: 'WhatsApp Generative AI Chatbot for automated customer support and engagement.',
     link: '#',
     image: '/assets/cody.png',
@@ -442,6 +442,10 @@ const AppContent = () => {
             <div id="certifications" className="section">
               <h2 className="section-title">CERTIFICATIONS</h2>
               <ul className="cert-list">
+                <li>
+                  <span>🏅  AWS Certified AI Practioner (AIF-C01)</span>
+                  <img src="/assets/Amazon_Web_Services_Logo.png" alt="" className="logo-badge" />
+                </li>
                 <li>
                   <span>🏅  Microsoft Azure AI Fundamental (AI-900)</span>
                   <img src="/assets/microsoft.jpg" alt="" className="logo-badge" />
